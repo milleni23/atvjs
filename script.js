@@ -1,24 +1,12 @@
 
-const desordem = {
-    bagunca: ['Alemanha','Belgica' ,'Camisão','Dourados','Espanha'],
-    desordemAlfa: function () {
-        this.bagunca.reverse();
-        console.log(this.bagunca);
+const ordem = {
+    alfabetica: ['Espanha', 'Belgica', 'Alemanha', 'Dourados', 'Camisão'],
+    alfa: function () {
+        this.alfabetica.sort();
+        console.log(this.alfabetica);
     }
 };
-desordem.desordemAlfa();
-
-const array = {
-    numerosUm: [3, 7, 1, 5, 9],
-    numerosDois: [2, 8, 6, 4,],
-    metodo: function () {
-        this.numerosUm.push(...this.numerosDois);
-        this.numerosUm.sort();
-        this.numerosDois.sort();
-        console.log(this.numerosUm);
-    }
-};
-array.metodo
+ordem.alfa();
 
 const remov = {
     numeros: [3, 7, 0, 5, 9],
@@ -30,3 +18,24 @@ const remov = {
 };
 
 remov.remover();
+   
+const array = {
+    numerosUm: [8, 5, 2, 6, 0],
+    numerosDois: [4, 2, 9, 9,],
+    metodo: function () {
+        this.numerosUm.push(...this.numerosDois);
+        this.numerosUm.sort();
+        this.numerosDois.sort();
+        console.log(this.numerosUm);
+    }
+};
+array.metodo()
+
+const desordem = {
+    bagunca: ['Alemanha','Belgica' ,'Camisão','Dourados','Espanha'],
+    desordemAlfa: function () {
+        this.bagunca.reverse();
+        console.log(this.bagunca);
+    }
+};
+desordem.desordemAlfa();
